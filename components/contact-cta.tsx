@@ -5,11 +5,17 @@ export function ContactCTA() {
   return (
     <section id="contact" className="py-32 px-6 bg-[#00DF82] text-black">
       <div className="container mx-auto text-center">
-        <div className="mx-auto mb-6 w-24 h-24">
-          <Image src="/dfour-logo.png" alt="DFour logo" width={96} height={96} className="mx-auto" />
+        <div className="mx-auto mb-3 w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24">
+          <Image
+            src="/dfour-logo.jpg"
+            alt="DFour logo"
+            width={96}
+            height={96}
+            className="object-contain mx-auto"
+            priority
+          />
         </div>
-
-        <h2 className="text-5xl md:text-8xl font-black mb-8 text-balance uppercase tracking-tighter leading-[0.85]">
+        <h2 className="text-5xl md:text-8xl font-black mb-4 text-balance uppercase tracking-tighter leading-[0.85]">
           Let's Build
           <br />
           Something Great
