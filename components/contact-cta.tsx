@@ -1,9 +1,14 @@
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 export function ContactCTA() {
   return (
     <section id="contact" className="py-32 px-6 bg-[#00DF82] text-black">
       <div className="container mx-auto text-center">
+        <div className="mx-auto mb-6 w-24 h-24">
+          <Image src="/dfour-logo.png" alt="DFour logo" width={96} height={96} className="mx-auto" />
+        </div>
+
         <h2 className="text-5xl md:text-8xl font-black mb-8 text-balance uppercase tracking-tighter leading-[0.85]">
           Let's Build
           <br />
