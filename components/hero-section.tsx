@@ -12,7 +12,7 @@ export function HeroSection() {
                 <span className="block whitespace-nowrap">meets creativity.</span>
               </h1>
             </div>
-          <p className="text-sm sm:text-base md:text-lg text-[color:var(--color-muted-foreground)] max-w-2xl mx-auto font-medium uppercase tracking-wider mb-6">
+          <p className="text-sm sm:text-base md:text-lg text-[color:var(--mint-green)] max-w-2xl mx-auto font-medium uppercase tracking-wider mb-6">
             Web Development · UI/UX Design · Branding · Logo
           </p>
 
