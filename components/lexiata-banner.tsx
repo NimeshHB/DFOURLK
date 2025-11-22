@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export function LexiataBanner() {
   return (
     <section className="py-16 px-6 bg-[#061217] text-white rounded-2xl my-12">
@@ -23,8 +25,8 @@ export function LexiataBanner() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {[
                 {
-                  title: "UI/UX Design",
-                  desc: "User-centered interfaces, prototypes and design systems",
+                 title: "Web Design & Development",
+desc: "Stunning, high-converting websites with fully responsive design"
                 },
                 {
                   title: "Graphic Design",
@@ -59,6 +61,13 @@ export function LexiataBanner() {
                   <div className="pointer-events-none absolute -inset-px rounded-xl opacity-0 group-hover:opacity-100 transition-opacity" style={{ boxShadow: '0 8px 40px rgba(0,223,130,0.12)' }} />
                 </article>
               ))}
+            </div>
+
+            {/* Large brand/logo at the end */}
+            <div className="mt-8 flex justify-center lg:justify-end">
+              <div className="w-36 h-36 md:w-44 md:h-44 lg:w-48 lg:h-48 rounded-full bg-white/5 grid place-items-center">
+                <Image src="/dfour-logo.jpg" alt="DFour logo" width={192} height={192} className="object-contain" />
+              </div>
             </div>
           </div>
         </div>
