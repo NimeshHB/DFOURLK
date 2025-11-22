@@ -33,7 +33,7 @@ export const projects: Project[] = [
     slug: "future-health",
     title: "Future Health",
     category: ["Mobile App", "SaaS"],
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/placeholder.svg?height=800&width=800",
     description: "SaaS mobile experience for modern healthcare.",
   },
 ]
