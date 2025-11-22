@@ -12,37 +12,26 @@ export default function WhoWeAre(): JSX.Element {
 
             <p className="text-gray-300 max-w-prose mb-6">
               We’re a tight-knit team of designers, developers, and brand strategists based in Sri
-              Lanka. We blend sharp strategy, pixel-perfect design, and clean code to launch standout
-              websites, powerful software solutions, and unforgettable brand identities that grow with
-              your business.
+              Lanka. With four years of focused, real-world experience in the industry, we’ve honed
+              our craft delivering results for startups, SMEs, and established brands across the
+              island and beyond.
             </p>
 
-            <h4 className="text-sm font-semibold uppercase text-[#00DF82] mb-3">Core strengths</h4>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
-              <div className="p-2 bg-white/3 rounded-md border border-white/6 text-sm flex items-center gap-3">
-              <div className="flex-none w-8 h-8 rounded-sm bg-[#00160f] grid place-items-center text-[#00DF82] text-xs">+</div>
-              <div>
-                <div className="font-medium">Web Design</div>
-                <div className="text-gray-300 text-xs">UI/UX & Frontend</div>
-              </div>
-              </div>
+            <p className="text-gray-300 max-w-prose mb-6">
+              We blend sharp strategy, pixel-perfect design, and clean, future-proof code to launch
+              standout websites, powerful software solutions, and unforgettable brand identities
+              that don’t just look good today — they actively grow with your business tomorrow.
+            </p>
 
-              <div className="p-2 bg-white/3 rounded-md border border-white/6 text-sm flex items-center gap-3">
-              <div className="flex-none w-8 h-8 rounded-sm bg-[#00160f] grid place-items-center text-[#00DF82] text-xs">+</div>
-              <div>
-                <div className="font-medium">Development</div>
-                <div className="text-gray-300 text-xs">Backend | Hosting</div>
-              </div>
-              </div>
+            <p className="text-gray-300 max-w-prose mb-6">
+              In just four years we’ve built a reputation for being fast, reliable, and genuinely
+              invested in every client’s success. When you partner with us, you get more than a
+              service provider — you get a Sri Lankan team that treats your goals like our own.
+            </p>
 
-              <div className="p-2 bg-white/3 rounded-md border border-white/6 text-sm flex items-center gap-3">
-              <div className="flex-none w-8 h-8 rounded-sm bg-[#00160f] grid place-items-center text-[#00DF82] text-xs">+</div>
-              <div>
-                <div className="font-medium">Branding</div>
-                <div className="text-gray-300 text-xs">Logo & Identity</div>
-              </div>
-              </div>
-            </div>
+            <p className="text-gray-300 max-w-prose mb-6">Let’s create something remarkable together. ✨</p>
+
+
 
             <a
               href="https://web.facebook.com/profile.php?id=61583791092081"
