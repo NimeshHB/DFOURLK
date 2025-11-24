@@ -23,11 +23,7 @@ export default function WhoWeAre(): JSX.Element {
               that don’t just look good today — they actively grow with your business tomorrow.
             </p>
 
-            <p className="text-gray-300 max-w-prose mb-6">
-              In just four years we’ve built a reputation for being fast, reliable, and genuinely
-              invested in every client’s success. When you partner with us, you get more than a
-              service provider — you get a Sri Lankan team that treats your goals like our own.
-            </p>
+
 
             <p className="text-gray-300 max-w-prose mb-6">Let’s create something remarkable together. ✨</p>
 

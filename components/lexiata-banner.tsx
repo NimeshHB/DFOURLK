@@ -63,12 +63,7 @@ desc: "Stunning, high-converting websites with fully responsive design"
               ))}
             </div>
 
-            {/* Large brand/logo at the end */}
-            <div className="mt-8 flex justify-center lg:justify-end">
-              <div className="w-36 h-36 md:w-44 md:h-44 lg:w-48 lg:h-48 rounded-full bg-white/5 grid place-items-center">
-                <Image src="/dfour-logo.jpg" alt="DFour logo" width={192} height={192} className="object-contain" />
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
