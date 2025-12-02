@@ -5,17 +5,17 @@ export function GraphicDesignPortfolio() {
     {
       title: "Logo Design",
       description: "Creative and memorable logos that represent your brand identity.",
-      image: "/placeholder.svg", // Replace with actual image
+      image: "/logo.svg", // Replace with actual image
     },
     {
       title: "Product Packaging Design",
       description: "Eye-catching packaging that stands out on shelves and engages customers.",
-      image: "/placeholder.svg", // Replace with actual image
+      image: "/parkingD.svg", // Replace with actual image
     },
     {
       title: "Social Media Post Design",
       description: "Engaging visuals for social media to boost your online presence.",
-      image: "/placeholder.svg", // Replace with actual image
+      image: "/social.svg", // Replace with actual image
     },
   ]
 

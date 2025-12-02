@@ -28,7 +28,7 @@ export function Header() {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <div className="relative h-10 w-44 overflow-hidden">
-              <Image src="/dfour-logo.png" alt="DFOUR Logo" fill className="object-contain object-left" priority />
+              <Image src="/Untitled-1-05.png" alt="DFOUR Logo" fill className="object-contain object-left" priority />
             </div>
           </div>
 
