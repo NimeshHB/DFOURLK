@@ -41,10 +41,10 @@ export default function WhoWeAre(): JSX.Element {
 
           <div className="lg:col-span-6 order-1 lg:order-2 grid grid-cols-2 gap-4">
             <div className="rounded-xl overflow-hidden shadow-lg">
-              <Image src="/chalana.jpg" alt="Team member" width={640} height={480} className="w-full h-auto object-cover" />
+              <Image src="/chalana.svg" alt="Team member1" width={640} height={480} className="w-full h-auto object-cover" />
             </div>
             <div className="rounded-xl overflow-hidden shadow-lg">
-              <Image src="/Nimesh.jpg" alt="Studio" width={640} height={480} className="w-full h-auto object-cover" />
+              <Image src="/Nimesh.svg" alt="Team member2" width={640} height={480} className="w-full h-auto object-cover" />
             </div>
           </div>
         </div>
