@@ -12,7 +12,7 @@ export const projects: Project[] = [
     slug: "neon-finance",
     title: "Neon Finance",
     category: ["UI/UX", "Web Design"],
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/dreamer.svg?height=600&width=800",
     description: "A modern financial dashboard focused on neon aesthetics.",
   },
   {
@@ -33,7 +33,7 @@ export const projects: Project[] = [
     slug: "future-health",
     title: "Future Health",
     category: ["Mobile App", "SaaS"],
-    image: "/ps.svg?height=800&width=800",
+    image: "/hotel.svg?height=800&width=800",
     description: "SaaS mobile experience for modern healthcare.",
   },
   {

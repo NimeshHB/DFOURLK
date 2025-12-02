@@ -39,7 +39,7 @@ export function HeroSection() {
               {/* Back-left (larger) */}
               <div className="absolute left-0 top-1/6 w-1/2 transform -translate-x-8 -translate-y-8 -rotate-6 z-10">
                 <div className="bg-[color:var(--color-card)] rounded-lg shadow-2xl overflow-hidden border-4 border-[color:var(--color-border)]">
-                  <Image src="/hotel.png" alt="Desktop 1" width={900} height={600} className="w-full h-auto" />
+                  <Image src="/hotel.svg" alt="Desktop 1" width={900} height={600} className="w-full h-auto" />
                 </div>
               </div>
 
@@ -53,7 +53,7 @@ export function HeroSection() {
               {/* Front-right */}
               <div className="absolute left-1/2 top-6 w-1/2 transform rotate-2 z-30">
                 <div className="bg-[color:var(--color-card)] rounded-lg shadow-2xl overflow-hidden border-4 border-[color:var(--color-border)]">
-                  <Image src="/placeholder.svg?height=800&width=800" alt="Desktop 3" width={900} height={600} className="w-full h-auto" />
+                  <Image src="/dreamer.svg?height=800&width=800" alt="Desktop 3" width={900} height={600} className="w-full h-auto" />
                 </div>
               </div>
 
