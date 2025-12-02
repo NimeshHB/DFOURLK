@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button"
 
 export function HeroSection() {
   return (
-    <section className="bg-[color:var(--color-background)] text-[color:var(--color-foreground)] min-h-[70vh] py-24 px-6 flex items-center">
+    <section className="bg-[color:var(--color-background)] text-[color:var(--color-foreground)] min-h-[60vh] py-12 px-4 flex items-center">
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center">
           <div className="flex items-center justify-center">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-black mb-2 sm:mb-1 leading-snug uppercase tracking-tight text-center space-y-1">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-black mb-6 sm:mb-8 leading-snug uppercase tracking-tight text-center">
               <span className="block whitespace-nowrap">Where technology</span>
               <span className="block whitespace-nowrap">meets creativity.</span>
             </h1>
@@ -30,13 +30,22 @@ export function HeroSection() {
           </p>
         </div>
 
+        {/* Mobile mockup: simplified single image for small screens */}
+        <div className="md:hidden mt-8">
+          <div className="mx-auto w-full max-w-sm">
+            <div className="relative aspect-[16/9] rounded-lg overflow-hidden bg-[color:var(--color-card)] border-4 border-[color:var(--color-border)] shadow-xl">
+              <Image src="/dreamer.svg" alt="Mockup" fill className="object-cover" />
+            </div>
+          </div>
+        </div>
+
         {/* Desktop mockups: centered 3D-style group of four overlapping desktop screens (reduced height) */}
-        <div className="mt-16 relative h-[420px] md:h-[560px]">
+        <div className="hidden md:block mt-16 relative h-[420px] md:h-[560px]">
           <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-full max-w-7xl">
             <div className="relative h-full">
               {/* Back-left (larger) */}
               <div className="absolute left-0 top-1/6 w-1/2 transform -translate-x-8 -translate-y-8 -rotate-6 z-10">
-                <div className="bg-[color:var(--color-card)] rounded-lg shadow-2xl overflow-hidden border-2 border-[color:var(--color-border)]">
+                <div className="bg-[color:var(--color-card)] rounded-lg shadow-2xl overflow-hidden border-4 border-[color:var(--color-border)]">
                   <Image src="/hotel.svg" alt="Desktop 1" width={900} height={600} className="w-full h-auto object-contain" />
                 </div>
               </div>
