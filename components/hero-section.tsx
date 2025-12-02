@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 
 export function HeroSection() {
   return (
-    <section className="bg-[color:var(--color-background)] text-[color:var(--color-foreground)] min-h-[60vh] py-12 px-4 flex items-center">
+    <section className="bg-[color:var(--color-background)] text-[color:var(--color-foreground)] min-h-[50vh] py-12 px-4 flex items-center">
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center">
           <div className="flex items-center justify-center">
