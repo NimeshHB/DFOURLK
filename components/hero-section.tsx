@@ -16,8 +16,8 @@ export function HeroSection() {
         </div>
 
         {/* services line placed near mockups */}
-        <div className="mt-8 text-center">
-          <p className="text-sm sm:text-base md:text-lg text-[color:var(--mint-green)] font-medium uppercase tracking-wider mb-8">
+        <div className="mt-4 text-center">
+          <p className="text-sm sm:text-base md:text-lg text-[color:var(--mint-green)] font-medium uppercase tracking-wider mb-12">
             <span className="inline-flex items-center justify-center gap-6">
               <span>Web Development</span>
               <span className="opacity-80">·</span>
