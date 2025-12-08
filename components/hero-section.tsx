@@ -7,7 +7,7 @@ export function HeroSection() {
       <div className="container mx-auto max-w-[1920px]">
         <div className="max-w-3xl mx-auto text-center">
           <div className="flex items-center justify-center">
-            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-black mb-6 sm:mb-8 leading-snug uppercase tracking-tight text-center">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-black mb-12 sm:mb-16 leading-snug uppercase tracking-tight text-center">
               <span className="block whitespace-nowrap">Where technology</span>
               <span className="block whitespace-nowrap">meets creativity.</span>
             </h1>
@@ -40,7 +40,7 @@ export function HeroSection() {
         </div>
 
         {/* Desktop mockups: centered 3D-style group of four overlapping desktop screens (reduced height) */}
-        <div className="hidden md:block mt-4 relative h-[420px] md:h-[560px]">
+        <div className="hidden md:block mt-4 relative h-[420px] md:h-[200px]">
           <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-full max-w-7xl">
             <div className="relative h-full">
               {/* Back-left (larger) */}
