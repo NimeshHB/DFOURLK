@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button"
 
 export function HeroSection() {
   return (
-    <section className="bg-[color:var(--color-background)] text-[color:var(--color-foreground)] min-h-[50vh] py-32 px-4 flex items-center">
+    <section className="bg-[color:var(--color-background)] text-[color:var(--color-foreground)] min-h-[90vh] py-28 px-4 flex items-center">
       <div className="container mx-auto max-w-[1920px]">
         <div className="max-w-3xl mx-auto text-center">
           <div className="flex items-center justify-center">
-            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-black mb-20 sm:mb-24 leading-snug uppercase tracking-tight text-center">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-black mb-20 sm:mb-12 leading-snug uppercase tracking-tight text-center">
               <span className="block whitespace-nowrap">Where technology</span>
               <span className="block whitespace-nowrap">meets creativity.</span>
             </h1>
@@ -16,7 +16,7 @@ export function HeroSection() {
         </div>
 
         {/* services line placed near mockups */}
-        <div className="mt-4 text-center">
+        <div className="mt-0 text-center">
           <p className="text-sm sm:text-base md:text-lg text-[color:var(--mint-green)] font-medium uppercase tracking-wider mb-12">
             <span className="inline-flex items-center justify-center gap-6">
               <span>Web Development</span>
