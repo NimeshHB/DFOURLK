@@ -40,7 +40,7 @@ export function HeroSection() {
         </div>
 
         {/* Desktop mockups: centered 3D-style group of four overlapping desktop screens (reduced height) */}
-        <div className="hidden md:block mt-16 relative h-[420px] md:h-[560px]">
+        <div className="hidden md:block mt-8 relative h-[420px] md:h-[560px]">
           <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-full max-w-7xl">
             <div className="relative h-full">
               {/* Back-left (larger) */}
