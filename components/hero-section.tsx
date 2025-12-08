@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 
 export function HeroSection() {
   return (
-    <section className="bg-[color:var(--color-background)] text-[color:var(--color-foreground)] min-h-[50vh] py-12 px-4 flex items-center">
+    <section className="bg-[color:var(--color-background)] text-[color:var(--color-foreground)] min-h-[50vh] py-32 px-4 flex items-center">
       <div className="container mx-auto max-w-[1920px]">
         <div className="max-w-3xl mx-auto text-center">
           <div className="flex items-center justify-center">
@@ -16,7 +16,7 @@ export function HeroSection() {
         </div>
 
         {/* services line placed near mockups */}
-        <div className="mt-12 text-center">
+        <div className="mt-8 text-center">
           <p className="text-sm sm:text-base md:text-lg text-[color:var(--mint-green)] font-medium uppercase tracking-wider mb-8">
             <span className="inline-flex items-center justify-center gap-6">
               <span>Web Development</span>
@@ -40,7 +40,7 @@ export function HeroSection() {
         </div>
 
         {/* Desktop mockups: centered 3D-style group of four overlapping desktop screens (reduced height) */}
-        <div className="hidden md:block mt-4 relative h-[420px] md:h-[200px]">
+        <div className="hidden md:block mt-4 relative h-[420px] md:h-[100px]">
           <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-full max-w-7xl">
             <div className="relative h-full">
               {/* Back-left (larger) */}
