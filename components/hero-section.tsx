@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 export function HeroSection() {
   return (
     <section className="bg-[color:var(--color-background)] text-[color:var(--color-foreground)] min-h-[50vh] py-12 px-4 flex items-center">
-      <div className="container mx-auto">
+      <div className="container mx-auto max-w-[1920px]">
         <div className="max-w-3xl mx-auto text-center">
           <div className="flex items-center justify-center">
             <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-black mb-6 sm:mb-8 leading-snug uppercase tracking-tight text-center">
