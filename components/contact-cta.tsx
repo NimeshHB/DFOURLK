@@ -75,6 +75,11 @@ export function ContactCTA() {
             📞 Call
           </a>
         </div>
+        <div className="mt-24 pt-8 border-t border-black/10 text-center">
+          <p className="text-sm font-bold uppercase tracking-widest opacity-60">
+            © 2025 D4. All rights reserved.
+          </p>
+        </div>
       </div>
     </section>
   )
