@@ -80,9 +80,9 @@ export function ContactCTA() {
             © 2025 DFOURLK. All rights reserved.
           </p>
           <div className="mt-4 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-[10px] font-bold uppercase tracking-[0.2em] opacity-40">
-            <span>Developed by Chalana Laksith</span>
+            <span>Developed by Chalana</span>
             <span className="hidden sm:block w-1 h-1 rounded-full bg-black/20" />
-            <span>Designed by Nimesh H Bandara</span>
+            <span>Designed by Nimesh</span>
           </div>
         </div>
       </div>
