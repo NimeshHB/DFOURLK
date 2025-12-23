@@ -101,14 +101,14 @@ export default function WhoWeAre() {
             >
               <Image
                 src="/chalana.jpg"
-                alt="Devaloper"
+                alt="Developer"
                 fill
                 className="object-cover scale-110 group-hover/card:scale-125 transition-transform duration-1000 grayscale group-hover/card:grayscale-0"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80" />
               <div className="absolute bottom-10 left-10 transition-transform duration-500 group-hover/card:translate-x-2">
                 <p className="text-[color:var(--mint-green)] font-black uppercase text-xs tracking-widest mb-2">Lead Developer</p>
-                <h4 className="text-3xl font-black text-white uppercase tracking-tighter">Devaloper</h4>
+                <h4 className="text-3xl font-black text-white uppercase tracking-tighter">Developer</h4>
               </div>
               <div className="absolute top-8 right-8 flex gap-4 opacity-0 group-hover/card:opacity-100 transition-opacity duration-300">
                 <button className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center text-white hover:bg-[color:var(--mint-green)] hover:text-black transition-colors">

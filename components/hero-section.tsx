@@ -35,6 +35,7 @@ export function HeroSection() {
   return (
     <section
       ref={sectionRef}
+      id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden group"
     >
       {/* Background Image with Parallax */}
