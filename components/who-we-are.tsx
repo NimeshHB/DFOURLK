@@ -109,7 +109,7 @@ export default function WhoWeAre() {
               <div className="absolute bottom-10 left-10 transition-transform duration-500 group-hover/card:translate-x-2">
                 <p className="text-[color:var(--mint-green)] font-black uppercase text-xs tracking-widest mb-2">Lead Developer</p>
                 <h4 className="text-3xl font-black text-white uppercase tracking-tighter">Developer</h4>
-                <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40 mt-1 italic">Chalana</p>
+                <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40 mt-1 italic">Chalana Lasith</p>
               </div>
               <div className="absolute top-8 right-8 flex gap-4 opacity-0 group-hover/card:opacity-100 transition-opacity duration-300">
                 <a
@@ -148,7 +148,7 @@ export default function WhoWeAre() {
               <div className="absolute bottom-10 left-10 transition-transform duration-500 group-hover/card:translate-x-2">
                 <p className="text-[color:var(--mint-green)] font-black uppercase text-xs tracking-widest mb-2">Lead Designer</p>
                 <h4 className="text-3xl font-black text-white uppercase tracking-tighter">Creative Lead</h4>
-                <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40 mt-1 italic">Nimesh</p>
+                <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40 mt-1 italic">Nimesh H Bandara</p>
               </div>
               <div className="absolute top-8 right-8 flex gap-4 opacity-0 group-hover/card:opacity-100 transition-opacity duration-300">
                 <a
