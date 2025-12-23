@@ -3,6 +3,7 @@ import { HeroSection } from "@/components/hero-section"
 import { AchievementSection } from "@/components/achievement-section"
 import { ClientsSection } from "@/components/clients-section"
 import { LexiataBanner } from "@/components/lexiata-banner"
+import { MarqueeBanner } from "@/components/marquee-banner"
 import WhoWeAre from "@/components/who-we-are"
 import { PortfolioSection } from "@/components/portfolio-section"
 import { GraphicDesignPortfolio } from "@/components/graphic-design-portfolio"
@@ -16,6 +17,7 @@ export default function Home() {
         <HeroSection />
         <AchievementSection />
         <LexiataBanner />
+        <MarqueeBanner />
         <WhoWeAre />
         <ClientsSection />
         <PortfolioSection />
