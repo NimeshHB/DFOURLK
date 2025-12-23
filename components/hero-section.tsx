@@ -1,78 +1,102 @@
+"use client"
+
+import { useState, useEffect, useRef } from "react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 export function HeroSection() {
+  const [mousePos, setMousePos] = useState({ x: 0.5, y: 0.5 })
+  const sectionRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!sectionRef.current) return
+      const { left, top, width, height } = sectionRef.current.getBoundingClientRect()
+
+      // Calculate mouse position relative to the section
+      const x = (e.clientX - left) / width
+      const y = (e.clientY - top) / height
+
+      setMousePos({ x, y })
+    }
+
+    const section = sectionRef.current
+    if (section) {
+      section.addEventListener("mousemove", handleMouseMove)
+    }
+
+    return () => {
+      if (section) {
+        section.removeEventListener("mousemove", handleMouseMove)
+      }
+    }
+  }, [])
+
   return (
-    <section className="bg-[color:var(--color-background)] text-[color:var(--color-foreground)] min-h-[90vh] py-28 px-4 flex items-center">
-      <div className="container mx-auto max-w-[1920px]">
-        <div className="max-w-3xl mx-auto text-center">
-          <div className="flex items-center justify-center">
-            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-black mb-20 sm:mb-12 leading-snug uppercase tracking-tight text-center">
-              <span className="block whitespace-nowrap">Where technology</span>
-              <span className="block whitespace-nowrap">meets creativity.</span>
+    <section
+      ref={sectionRef}
+      className="relative min-h-screen flex items-center justify-center overflow-hidden group"
+    >
+      {/* Background Image with Parallax */}
+      <div
+        className="absolute inset-x-[-10%] inset-y-[-10%] z-0 transition-transform duration-1000 ease-out pointer-events-none"
+        style={{
+          transform: `translate(${(mousePos.x - 0.5) * -4}%, ${(mousePos.y - 0.5) * -4}%) rotate(${(mousePos.x - 0.5) * 1}deg)`
+        }}
+      >
+        <Image
+          src="/hero-visual.png"
+          alt="Creative Agency Background"
+          fill
+          className="object-cover opacity-70 scale-110"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-[color:var(--color-background)] z-10" />
+      </div>
+
+      {/* Interactive Spotlight Glow */}
+      <div
+        className="absolute inset-0 z-10 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+        style={{
+          background: `radial-gradient(circle 600px at ${mousePos.x * 100}% ${mousePos.y * 100}%, rgba(0, 223, 130, 0.15), transparent 70%)`
+        }}
+      />
+
+      <div className="container mx-auto px-6 relative z-20">
+        <div className="max-w-5xl mx-auto text-center">
+          <div className="flex flex-col items-center justify-center">
+            <h1 className="text-[13vw] sm:text-[11vw] md:text-[8vw] lg:text-[7vw] font-black mb-6 leading-[0.85] uppercase tracking-tighter text-white drop-shadow-2xl transition-transform duration-300 ease-out"
+              style={{
+                transform: `translate(${(mousePos.x - 0.5) * 20}px, ${(mousePos.y - 0.5) * 20}px)`
+              }}
+            >
+              <span className="block">Where technology</span>
+              <span className="block text-[color:var(--mint-green)]">meets creativity.</span>
             </h1>
-          </div>
-          {/* services line removed from header — placed nearer to mockups below */}
-        </div>
 
-        {/* services line placed near mockups */}
-        <div className="mt-0 text-center">
-          <p className="text-sm sm:text-base md:text-lg text-[color:var(--mint-green)] font-medium uppercase tracking-wider mb-12">
-            <span className="inline-flex items-center justify-center gap-6">
-              <span>Web Development</span>
-              <span className="opacity-80">·</span>
-              <span>UI/UX Design</span>
-              <span className="opacity-80">·</span>
-              <span>Branding</span>
-              <span className="opacity-80">·</span>
-              <span>Logo</span>
-            </span>
-          </p>
-        </div>
+            <p className="text-sm md:text-lg text-gray-200 font-bold uppercase tracking-[0.4em] mb-12 max-w-2xl opacity-80 transition-transform duration-500 ease-out"
+              style={{
+                transform: `translate(${(mousePos.x - 0.5) * 10}px, ${(mousePos.y - 0.5) * 10}px)`
+              }}
+            >
+              Web Devalopment • Software • UI/UX • Design • Branding
+            </p>
 
-        {/* Mobile mockup: simplified single image for small screens */}
-        <div className="md:hidden mt-8">
-          <div className="mx-auto w-full max-w-sm">
-            <div className="relative aspect-[16/9] rounded-lg overflow-hidden bg-[color:var(--color-card)] border-4 border-[color:var(--color-border)] shadow-xl">
-              <Image src="/dreamer.svg" alt="Mockup" fill className="object-cover" />
+            <div className="flex flex-col sm:flex-row gap-6 mt-4">
+              <Button className="mint-btn mint-glow mint-focus rounded-none px-10 py-7 text-lg font-black uppercase tracking-widest">
+                Explore Work
+              </Button>
+              <Button variant="outline" className="border-white text-white hover:bg-white/10 rounded-none px-10 py-7 text-lg font-black uppercase tracking-widest transition-all">
+                Our Services
+              </Button>
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Desktop mockups: centered 3D-style group of four overlapping desktop screens (reduced height) */}
-        <div className="hidden md:block mt-4 relative h-[420px] md:h-[100px]">
-          <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-full max-w-7xl">
-            <div className="relative h-full">
-              {/* Back-left (larger) */}
-              <div className="absolute left-0 top-1/6 w-1/2 transform -translate-x-8 -translate-y-8 -rotate-6 z-10">
-                <div className="bg-[color:var(--color-card)] rounded-lg shadow-2xl overflow-hidden border-4 border-[color:var(--color-border)]">
-                  <Image src="/hotel.svg" alt="Desktop 1" width={900} height={600} className="w-full h-auto object-contain" />
-                </div>
-              </div>
-
-              {/* Front-left */}
-              <div className="absolute left-1/4 top-0 w-1/2 transform -rotate-2 z-20">
-                <div className="bg-[color:var(--color-card)] rounded-lg shadow-2xl overflow-hidden border-4 border-[color:var(--color-border)]">
-                  <Image src="/spices.svg" alt="Desktop 2" width={900} height={600} className="w-full h-auto object-contain" />
-                </div>
-              </div>
-
-              {/* Front-right */}
-              <div className="absolute left-1/2 top-6 w-1/2 transform rotate-2 z-30">
-                <div className="bg-[color:var(--color-card)] rounded-lg shadow-2xl overflow-hidden border-4 border-[color:var(--color-border)]">
-                  <Image src="/dreamer.svg?height=800&width=800" alt="Desktop 3" width={900} height={600} className="w-full h-auto object-contain" />
-                </div>
-              </div>
-
-              {/* Back-right */}
-              <div className="absolute right-0 top-1/4 w-1/2 transform translate-x-8 rotate-8 z-5">
-                <div className="bg-[color:var(--color-card)] rounded-lg shadow-2xl overflow-hidden border-4 border-[color:var(--color-border)]">
-                  <Image src="/sanjisir.svg" alt="Desktop 4" width={900} height={600} className="w-full h-auto object-contain" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      {/* Subtle Scroll Indicator */}
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce">
+        <div className="w-px h-16 bg-gradient-to-b from-[color:var(--mint-green)] to-transparent" />
       </div>
     </section>
   )

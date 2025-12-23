@@ -38,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     // Force dark theme by default for a moody, green-accent look.
-    <html lang="en" className={`${inter.variable} ${playfair.variable} dark`}>
+    <html lang="en" className={`${inter.variable} ${playfair.variable} dark`} suppressHydrationWarning>
       <body className={`font-sans antialiased`}>
         {children}
         <Analytics />

@@ -1,6 +1,6 @@
 import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
-import { AboutSection } from "@/components/about-section"
+import { AchievementSection } from "@/components/achievement-section"
 import { ClientsSection } from "@/components/clients-section"
 import { LexiataBanner } from "@/components/lexiata-banner"
 import WhoWeAre from "@/components/who-we-are"
@@ -14,7 +14,7 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
-        <AboutSection />
+        <AchievementSection />
         <LexiataBanner />
         <WhoWeAre />
         <ClientsSection />
