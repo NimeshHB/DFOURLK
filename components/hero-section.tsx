@@ -83,11 +83,11 @@ export function HeroSection() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 mt-4">
-              <Button className="mint-btn mint-glow mint-focus rounded-none px-10 py-7 text-lg font-black uppercase tracking-widest">
-                Explore Work
+              <Button asChild className="mint-btn mint-glow mint-focus rounded-none px-10 py-7 text-lg font-black uppercase tracking-widest">
+                <a href="#work">Explore Work</a>
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white/10 rounded-none px-10 py-7 text-lg font-black uppercase tracking-widest transition-all">
-                Our Services
+              <Button asChild variant="outline" className="border-white text-white hover:bg-white/10 rounded-none px-10 py-7 text-lg font-black uppercase tracking-widest transition-all">
+                <a href="#services">Our Services</a>
               </Button>
             </div>
           </div>

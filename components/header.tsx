@@ -20,8 +20,8 @@ export function Header() {
   const navLinks = [
     { name: "Work", href: "#work" },
     { name: "Services", href: "#services" },
-    { name: "About", href: "#about" },
-    { name: "Journal", href: "#journal" },
+    { name: "About", href: "#who-we-are" },
+
     { name: "Contact", href: "#contact" },
   ]
 
@@ -90,7 +90,10 @@ export function Header() {
           ))}
           <Button
             className="mint-btn mint-glow mint-focus rounded-none px-10 py-6 text-lg font-black uppercase tracking-widest mt-4"
-            onClick={() => setMobileMenuOpen(false)}
+            onClick={() => {
+              setMobileMenuOpen(false)
+              window.open("https://wa.me/message/FV5EWWATDD4GG1", "_blank")
+            }}
           >
             {"Start Project"}
           </Button>

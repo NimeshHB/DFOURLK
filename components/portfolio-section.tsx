@@ -32,9 +32,9 @@ const projects: Project[] = [
   },
   {
     slug: "collective-visuals",
-    title: "Sanji Collective",
+    title: "Photography Collective",
     category: ["Photography", "Studio"],
-    image: "/sanjisir.svg?height=800&width=1200",
+    image: "/sanisir.svg?height=800&width=1200",
     description: "Capturing the essence of modern minimalism in every frame.",
     color: "#0099ff",
   },
@@ -163,8 +163,8 @@ function PerspectiveCard({ project, index }: { project: Project; index: number }
           transform: `translateZ(100px) scale(${isHovered ? 1.1 : 1})`,
         }}
       >
-        <span className="text-white/20 text-xs font-black tracking-widest">Year</span>
-        <span className="text-white text-lg font-black">{2021 + index}</span>
+        <span className="text-white/20 text-xs font-black tracking-widest">Project</span>
+        <span className="text-white text-lg font-black">{1 + index}</span>
       </div>
     </div>
   )
@@ -244,7 +244,7 @@ export function PortfolioSection() {
 
           <button className="group relative px-16 py-8 md:px-24 md:py-12 bg-white rounded-full overflow-hidden transition-all duration-500 hover:scale-105 active:scale-95">
             <div className="relative z-10 flex items-center gap-8">
-              <span className="text-black text-2xl md:text-5xl font-black tracking-tighter">Enter The Vault</span>
+              <span className="text-black text-2xl md:text-5xl font-black tracking-tighter">More Project</span>
               <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-black text-white flex items-center justify-center group-hover:rotate-45 transition-transform duration-500">
                 <Maximize className="w-6 h-6 md:w-8 md:h-8" />
               </div>
