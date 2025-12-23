@@ -149,12 +149,22 @@ export default function WhoWeAre() {
                 <h4 className="text-3xl font-black text-white uppercase tracking-tighter">Creative Lead</h4>
               </div>
               <div className="absolute top-8 right-8 flex gap-4 opacity-0 group-hover/card:opacity-100 transition-opacity duration-300">
-                <button className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center text-white hover:bg-[color:var(--mint-green)] hover:text-black transition-colors">
+                <a
+                  href="https://github.com/NimeshHB"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center text-white hover:bg-[color:var(--mint-green)] hover:text-black transition-colors"
+                >
                   <Github className="w-5 h-5" />
-                </button>
-                <button className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center text-white hover:bg-[color:var(--mint-green)] hover:text-black transition-colors">
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/nimesh-h-bandara-3b2077232/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center text-white hover:bg-[color:var(--mint-green)] hover:text-black transition-colors"
+                >
                   <Linkedin className="w-5 h-5" />
-                </button>
+                </a>
               </div>
             </div>
 
