@@ -103,7 +103,7 @@ export default function WhoWeAre() {
                 src="/chalana.jpg"
                 alt="Developer"
                 fill
-                className="object-cover scale-110 group-hover/card:scale-125 transition-transform duration-1000 grayscale group-hover/card:grayscale-0"
+                className="object-cover scale-110 group-hover/card:scale-125 transition-transform duration-1000"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80" />
               <div className="absolute bottom-10 left-10 transition-transform duration-500 group-hover/card:translate-x-2">
@@ -142,7 +142,7 @@ export default function WhoWeAre() {
                 src="/nimesh.jpg"
                 alt="Creative Lead"
                 fill
-                className="object-cover scale-110 group-hover/card:scale-125 transition-transform duration-1000 grayscale group-hover/card:grayscale-0"
+                className="object-cover scale-110 group-hover/card:scale-125 transition-transform duration-1000"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80" />
               <div className="absolute bottom-10 left-10 transition-transform duration-500 group-hover/card:translate-x-2">
