@@ -18,6 +18,7 @@ export function Header() {
   }, [])
 
   const navLinks = [
+    { name: "Home", href: "#who-we-are" },
     { name: "Work", href: "#work" },
     { name: "Services", href: "#services" },
     { name: "About", href: "#who-we-are" },
@@ -56,7 +57,10 @@ export function Header() {
 
           {/* Desktop CTA Button */}
           <div className="hidden md:block">
-            <Button className="mint-btn mint-glow mint-focus rounded-none px-6 font-black uppercase tracking-wider">
+            <Button
+              className="mint-btn mint-glow mint-focus rounded-none px-6 font-black uppercase tracking-wider"
+              onClick={() => window.open("https://wa.me/message/FV5EWWATDD4GG1", "_blank")}
+            >
               {"Start Project"}
             </Button>
           </div>
