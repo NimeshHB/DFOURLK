@@ -150,19 +150,7 @@ export default function WhoWeAre() {
 
           </div>
 
-          {/* Call to Action */}
-          <div className="mt-40 text-center">
-            <a
-              href="#contact"
-              className="group relative inline-flex items-center gap-6 bg-transparent text-white border border-white/20 py-8 px-16 rounded-full overflow-hidden transition-all duration-500 hover:border-[color:var(--mint-green)]"
-            >
-              <span className="absolute inset-0 bg-[color:var(--mint-green)] translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
-              <span className="relative z-10 text-xl font-black uppercase tracking-widest mix-blend-difference group-hover:text-black">
-                Become a Partner
-              </span>
-              <ArrowUpRight className="relative z-10 w-6 h-6 group-hover:rotate-45 transition-transform mix-blend-difference group-hover:text-black" />
-            </a>
-          </div>
+
 
         </div>
       </div>
