@@ -8,11 +8,13 @@ import WhoWeAre from "@/components/who-we-are"
 import { PortfolioSection } from "@/components/portfolio-section"
 import { GraphicDesignPortfolio } from "@/components/graphic-design-portfolio"
 import { ContactCTA } from "@/components/contact-cta"
+import { MobileMoodNav } from "@/components/mobile-mood-nav"
 
 export default function Home() {
   return (
     <div className="min-h-screen">
       <Header />
+      <MobileMoodNav />
       <main>
         <HeroSection />
         <AchievementSection />

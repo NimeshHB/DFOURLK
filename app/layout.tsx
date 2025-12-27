@@ -8,10 +8,10 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-serif" })
 
 export const metadata: Metadata = {
-  title: "DFour Lab",
+  title: "DFourLK",
   description:
-    "Award-winning web design, UI/UX, and branding for ambitious brands worldwide. Transform your digital presence with Pixelcraft Studio.",
-  generator: "v0.app",
+    "web design, UI/UX, and branding for ambitious brands worldwide.",
+  generator: "DFourLK",
   icons: {
     icon: [
       {

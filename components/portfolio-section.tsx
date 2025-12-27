@@ -62,6 +62,31 @@ const projects: Project[] = [
     description: "Transforming enterprise complexity into elegant interaction.",
     color: "#ff6600",
   },
+
+  {
+    slug: "haven-hotels",
+    title: "Haven Hotels",
+    category: ["Hospitality", "Web"],
+    image: "/hotel.svg?height=1000&width=1000",
+    description: "Seamless digital concierges for the world's most elite travelers.",
+    color: "#ffcc00",
+  },
+  {
+    slug: "flow-park",
+    title: "Flow Park",
+    category: ["Urban Design", "SaaS"],
+    image: "/parkingS.svg?height=800&width=1000",
+    description: "Designing the pulse of modern cities through smart logistics.",
+    color: "#9933ff",
+  },
+  {
+    slug: "atlas-portal",
+    title: "Atlas Portal",
+    category: ["Interface", "Redesign"],
+    image: "/uiux.svg?height=900&width=1100",
+    description: "Transforming enterprise complexity into elegant interaction.",
+    color: "#ff6600",
+  },
 ]
 
 function PerspectiveCard({ project, index }: { project: Project; index: number }) {
