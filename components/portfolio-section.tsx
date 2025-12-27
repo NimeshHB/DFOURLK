@@ -181,7 +181,7 @@ function PerspectiveCard({ project, index }: { project: Project; index: number }
           {project.url && (
             <button
               onClick={() => window.open(project.url, "_blank")}
-              className="mt-4 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-700 delay-200 flex items-center gap-2 px-4 py-2 bg-[#00DF82] text-black rounded-full font-black text-xs uppercase tracking-wider hover:bg-[#00DF82]/90 hover:scale-105 active:scale-95"
+              className="mt-4 flex items-center gap-2 px-4 py-2 bg-[#00DF82] text-black rounded-full font-black text-xs uppercase tracking-wider hover:bg-[#00DF82]/90 hover:scale-105 active:scale-95 transition-all duration-300"
             >
               Visit Site
               <ArrowUpRight className="w-4 h-4" />
