@@ -3,11 +3,9 @@
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
-import { Menu, X } from "lucide-react"
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false)
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,15 +20,14 @@ export function Header() {
     { name: "Work", href: "#work" },
     { name: "Services", href: "#services" },
     { name: "About", href: "#who-we-are" },
-
     { name: "Contact", href: "#contact" },
   ]
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled || mobileMenuOpen
-        ? "bg-[color:var(--color-card)]/95 backdrop-blur-md shadow-sm border-b border-[color:var(--color-border)]"
-        : "bg-[color:var(--color-card)]"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
+          ? "bg-[color:var(--color-card)]/95 backdrop-blur-md shadow-sm border-b border-[color:var(--color-border)]"
+          : "bg-[color:var(--color-card)]"
         }`}
     >
       <div className="container mx-auto px-6 py-4 md:py-6">
@@ -64,44 +61,7 @@ export function Header() {
               {"Start Project"}
             </Button>
           </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2 text-[color:var(--color-foreground)] focus:outline-none"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle Menu"
-          >
-            {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
         </div>
-      </div>
-
-      {/* Mobile Navigation Drawer */}
-      <div
-        className={`fixed inset-0 top-[60px] md:top-[88px] z-40 bg-[color:var(--color-card)] transition-transform duration-300 ease-in-out md:hidden ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"
-          }`}
-      >
-        <nav className="flex flex-col items-center justify-center h-full gap-8 p-6">
-          {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="text-2xl font-black uppercase tracking-widest text-[color:var(--color-foreground)] hover:text-[color:var(--color-primary)] transition-colors"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              {link.name}
-            </a>
-          ))}
-          <Button
-            className="mint-btn mint-glow mint-focus rounded-none px-10 py-6 text-lg font-black uppercase tracking-widest mt-4"
-            onClick={() => {
-              setMobileMenuOpen(false)
-              window.open("https://wa.me/message/FV5EWWATDD4GG1", "_blank")
-            }}
-          >
-            {"Start Project"}
-          </Button>
-        </nav>
       </div>
     </header>
   )
