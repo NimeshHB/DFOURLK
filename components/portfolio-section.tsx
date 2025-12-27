@@ -81,9 +81,9 @@ const projects: Project[] = [
   },
   {
     slug: "atlas-portal",
-    title: "Atlas Portal",
-    category: ["Interface", "Redesign"],
-    image: "/uiux.svg?height=900&width=1100",
+    title: "Travel Website",
+    category: ["Website Design", "Redesign"],
+    image: "/orange.svg?height=900&width=1100",
     description: "Transforming enterprise complexity into elegant interaction.",
     color: "#ff6600",
   },
