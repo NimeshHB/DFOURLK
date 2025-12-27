@@ -11,6 +11,7 @@ export type Project = {
   image: string
   description?: string
   color: string
+  url?: string
 }
 
 const projects: Project[] = [
@@ -21,14 +22,16 @@ const projects: Project[] = [
     image: "/dreamer.svg",
     description: "Architecting the next generation of spatial operating systems.",
     color: "#00ffcc",
+    url: "https://example.com/dreamer-os",
   },
   {
     slug: "spice-soul",
-    title: "Spice & Soul",
-    category: ["Brand Identity", "Design"],
+    title: " E-commerce",
+    category: ["Brand Identity", "Website Design"],
     image: "/spices.svg",
     description: "Reimagining luxury through culinary art and digital precision.",
     color: "#ff3366",
+    url: "https://nilwala-spices.vercel.app/",
   },
   {
     slug: "collective-visuals",
@@ -37,6 +40,7 @@ const projects: Project[] = [
     image: "/sanisir.svg?height=800&width=1200",
     description: "Capturing the essence of modern minimalism in every frame.",
     color: "#0099ff",
+    url: "https://example.com/photography",
   },
   {
     slug: "haven-hotels",
@@ -45,6 +49,7 @@ const projects: Project[] = [
     image: "/hotel.svg?height=1000&width=1000",
     description: "Seamless digital concierges for the world's most elite travelers.",
     color: "#ffcc00",
+    url: "https://example.com/haven-hotels",
   },
   {
     slug: "flow-park",
@@ -53,6 +58,7 @@ const projects: Project[] = [
     image: "/parkingS.svg?height=800&width=1000",
     description: "Designing the pulse of modern cities through smart logistics.",
     color: "#9933ff",
+    url: "https://example.com/flow-park",
   },
   {
     slug: "atlas-portal",
@@ -61,6 +67,7 @@ const projects: Project[] = [
     image: "/uiux.svg?height=900&width=1100",
     description: "Transforming enterprise complexity into elegant interaction.",
     color: "#ff6600",
+    url: "https://example.com/atlas-portal",
   },
 
   {
@@ -70,6 +77,7 @@ const projects: Project[] = [
     image: "/hotel.svg?height=1000&width=1000",
     description: "Seamless digital concierges for the world's most elite travelers.",
     color: "#ffcc00",
+    url: "https://example.com/haven-hotels",
   },
   {
     slug: "flow-park",
@@ -78,6 +86,7 @@ const projects: Project[] = [
     image: "/parkingS.svg?height=800&width=1000",
     description: "Designing the pulse of modern cities through smart logistics.",
     color: "#9933ff",
+    url: "https://example.com/flow-park",
   },
   {
     slug: "atlas-portal",
@@ -86,6 +95,7 @@ const projects: Project[] = [
     image: "/orange.svg?height=900&width=1100",
     description: "Transforming enterprise complexity into elegant interaction.",
     color: "#ff6600",
+    url: "https://orangelk.vercel.app/",
   },
 ]
 
@@ -166,6 +176,17 @@ function PerspectiveCard({ project, index }: { project: Project; index: number }
           <p className="text-gray-400 text-sm max-w-[200px] opacity-0 group-hover:opacity-100 transition-opacity duration-700 delay-100 translate-y-4 group-hover:translate-y-0 translate-transform">
             {project.description}
           </p>
+
+          {/* Visit Site Button */}
+          {project.url && (
+            <button
+              onClick={() => window.open(project.url, "_blank")}
+              className="mt-4 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-700 delay-200 flex items-center gap-2 px-4 py-2 bg-[#00DF82] text-black rounded-full font-black text-xs uppercase tracking-wider hover:bg-[#00DF82]/90 hover:scale-105 active:scale-95"
+            >
+              Visit Site
+              <ArrowUpRight className="w-4 h-4" />
+            </button>
+          )}
 
           <div className="absolute top-8 right-8 scale-0 group-hover:scale-100 transition-transform duration-500 rounded-2xl bg-white text-black p-4 rotate-12 group-hover:rotate-0">
             <ArrowUpRight className="w-8 h-8" />
