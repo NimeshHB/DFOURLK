@@ -58,7 +58,7 @@ export function ContactCTA() {
           </a>
 
           <a
-            href="https://wa.me/94771234567"
+            href=" https://wa.me/message/FV5EWWATDD4GG1"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="WhatsApp"
@@ -68,7 +68,7 @@ export function ContactCTA() {
           </a>
 
           <a
-            href="tel:+94771234567"
+            href="tel:+94779161102"
             aria-label="Call"
             className="inline-flex items-center gap-2 px-4 py-3 rounded-md bg-black text-white font-semibold text-sm md:text-base whitespace-nowrap"
           >
